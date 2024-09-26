@@ -1,0 +1,127 @@
+{% load static %}
+
+{% block content %}
+
+<style>
+    /* Container styling */
+    .container {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Header styling */
+    h2 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    /* Form group styling */
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    /* Label styling */
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #555;
+    }
+
+    /* Input styling */
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    /* Button styling */
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Button hover effect */
+    button:hover {
+        background-color: #218838;
+    }
+
+    /* Link styling */
+    p {
+        text-align: center;
+        margin-top: 20px;
+        color: #777;
+    }
+
+    p a {
+        color: #28a745;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    p a:hover {
+        text-decoration: underline;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h2>Sign Up</h2>
+        <form action=" " method="post">
+            {% csrf_token %}
+            <div class="input-group">
+                <!-- <label for="username">Username</label>
+                <input type="text" id="username" name="username" required> -->
+
+                <!-- {{form}} -->
+                 {{form.username.label}}
+                 {{form.username}}
+
+                 {{form.email.label}}
+                 {{form.email}}
+
+                 {{form.password1.label}}
+                 {{form.password1}}
+
+                 {{form.password2.label}}
+                 {{form.password2}}
+
+                 
+            </div>
+            <!-- <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div> -->
+            <!-- <div class="input-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div> -->
+            <button type="submit">Sign Up</button>
+            <p>Already have an account? <a href="login.html">Login</a></p>
+        </form>
+    </div>
+</body>
+</html>
+
+{% endblock content %}

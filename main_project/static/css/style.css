@@ -1,0 +1,320 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+nav{
+
+    background-color: #dc2626;
+   justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 20px;
+   
+}
+
+nav ul li a{
+
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1rem;
+}
+
+.container{
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+
+.product-col{
+
+padding: 20px;
+width: 30%;
+height: inherit;
+flex-wrap: wrap;
+border: 1px solid goldenrod;
+margin-right: 10px;
+
+}
+
+.product-col img{
+
+width: 100%;
+display: block;
+}
+
+ /*  cart */
+
+
+ .cost-item{
+
+    max-width: 1024px;
+    margin: auto;
+    max-width: 100%;
+
+ }
+ .box-element{
+
+    box-shadow: 0 0 2px 1px gray;
+    padding: 10px;
+    background-color: #fff;
+
+ }
+
+ .quantity{
+    display: inline-block;
+    font-weight: 700;
+    padding-right: 10px;
+
+ }
+ .chg-quantity{
+    cursor: pointer;
+    width: 12px;
+    display: block;
+    margin-top: 5px;
+    transition: .1s;
+ } 
+
+
+ 
+ #cart-icon{
+    width: 25px;
+    display: inline-block;
+    margin-left: 15px;
+    
+ }
+
+
+.btn{
+
+background-color: #dc2626;
+color: white;
+padding-top:10px ;
+padding-left:25px ;
+padding-right:25px ;
+padding-bottom: 10px;
+border-radius: 10px;
+
+}
+
+.row-image{
+    width: 100px;
+
+
+}
+
+
+.box-element table tr th .btn-dark{
+    background-color: chartreuse; /* Green background */
+    border: none; /* Remove border */
+    color: rgb(235, 240, 235); /* white text */
+    padding: 15px 32px; /* padding around the text */
+    text-align: center; /* center the text */
+    text-decoration: none; /* remove underline from text */
+    display: inline-block; /*make the button an inline block element */
+    font-size: 16px; /* set font size */
+    margin: 4px 2px; /* margin around the button */
+    cursor: pointer; 
+    border-radius: 8px; /* rounded corners */
+    transition: background-color 0.3s; /* smooth background color transition */
+
+
+}
+.btn-green{
+    background-color: chartreuse; /* Green background */
+    border: none; /* Remove border */
+    color: rgb(235, 240, 235); /* white text */
+    padding: 15px 32px; /* padding around the text */
+    text-align: center; /* center the text */
+    text-decoration: none; /* remove underline from text */
+    display: inline-block; /*make the button an inline block element */
+    font-size: 16px; /* set font size */
+    margin: 4px 2px; /* margin around the button */
+    cursor: pointer; 
+    border-radius: 8px; /* rounded corners */
+    transition: background-color 0.3s; /* smooth background color transition */
+
+}
+
+
+
+
+
+
+.product-col h4{
+
+    font-size: 15px;
+    display: inline-block;
+    float: right;
+
+}
+.logo{
+  color: whitesmoke;
+  
+}
+
+/* the css for the signup and login page */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+p {
+    text-align: center;
+    color: #666;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;}
+           
+           .footer {
+               background-color: #dc2626 ;
+               color: white;
+               padding: 40px 0;
+               display: flex;
+               justify-content: space-around;
+               align-items: flex-start;
+               flex-wrap: wrap;
+           }
+           .footer-section {
+               flex: 1;
+               min-width: 200px;
+               margin: 20px;
+           }
+           .footer-section h4 {
+               margin-bottom: 20px;
+               font-size: 18px;
+           }
+           .footer-section p, .footer-section ul, .footer-section a {
+               color: #bbb;
+               text-decoration: none;
+               font-size: 14px;
+           }
+           .footer-section ul {
+               list-style: none;
+               padding: 0;
+           }
+           .footer-section ul li {
+               margin-bottom: 10px;
+           }
+           .footer-section ul li a:hover {
+               text-decoration: underline;
+           }
+           .social-media a {
+               margin: 0 10px;
+               color: #bbb;
+               font-size: 18px;
+           }
+           .social-media a:hover {
+               color: #ff6347;
+           }
+           .footer-bottom {
+               text-align: center;
+               margin-top: 20px;
+               border-top: 1px solid #444;
+               padding-top: 20px;
+               width: 100%;
+           }
+           @media (max-width: 768px) {
+               .footer {
+                   flex-direction: column;
+                   align-items: center;
+               }
+               .footer-section {
+                   margin: 10px 0;
+               }
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+   
